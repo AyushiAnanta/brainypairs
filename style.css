@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #474747;
+    color: #C6C5B9;
+}
+
+* {
+    font-family: "Cute Font", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    border: 10px solid #F2F2F2;
+    height:100px;
+    width: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 6px;
+    border-radius: 10px;
+}
+
+img:hover{
+    height:114px;
+    width: 114px;
+
+}
+
+
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6rem;
+}
+
+H1{
+    font-size: 8rem;
+  
+}
+
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#headline{
+    background-color: #7F7F7F;
+    width: 50%;
+    height: 2.5rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    
+}
+
+#score{
+    background-color: #7F7F7F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#timer{
+    background-color: #7F7F7F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h2{
+    background-color: #7F7F7F;
+    color: #F2F2F2;
+}
+
+p{
+    color: #F2F2F2;
+    background-color: #7F7F7F;
+    font-size: 2rem;
+}
+
+/*#msg{
+    background-color: #7F7F7F;
+    width: 40%;
+    height: 3.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    
+}
+*/
+#gamearea{
+    background-color: #7F7F7F;
+    width: 75%;
+    height: 71vh;
+    border-radius: 10px;
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    
+}
+
+/* Add this to your existing styles.css file */
+
+/* Add this to your existing styles.css file */
+
+img.flip {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  img.flip.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  img.flip::before, img.flip::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-size: cover;
+  }
+  
+  img.flip::before {
+    background-image: url('waves.png'); /* Front image */
+    z-index: 2;
+  }
+  
+  img.flip.flipped::before {
+    z-index: 1;
+  }
+  
+  img.flip.flipped::after {
+    z-index: 2;
+  }
+  
